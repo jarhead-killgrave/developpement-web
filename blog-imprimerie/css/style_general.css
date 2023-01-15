@@ -1,0 +1,115 @@
+/*Feuille de style commune à toute les pages*/
+html {
+    background: linear-gradient(45deg, #563f3f, white, gray);
+}
+body {
+    /*le display grid me permet de garder ma page inchangé même après redimensonnement de ma fenetre */
+    display: grid;
+    margin: 0 64px;
+    max-width: 80rem;
+    font-size: 1em;
+    vertical-align: baseline;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #444;
+    background-color: white;
+    box-shadow: 0px 0px 15px 15px #333;
+}
+*{
+    box-sizing:border-box
+}
+
+
+/*En tête */
+.titre {
+    font-size: 4em;
+    color: darkgray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 5px 5px 4px black; /*Ajout d'un fond d'ombre*/
+}
+.menu {
+    display: flex;
+    border-bottom: 2px solid black;
+}
+.lien-de-navig {
+    /*les liens de navgation du menu seront de couleur blanche avec un fond noir et des bordures superieurs arrondis */
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px 0px;
+    transition: all 0.5s ease-out;
+}
+a.lien-de-navig.active {
+    /*Quand la page est celle courante*/
+    transform: rotate(5deg);
+    box-shadow: -7px 6px 15px #333;
+    background: linear-gradient(45deg, white, gray);
+    border: 1px solid black;
+    color: black;
+}
+
+.lien-de-navig:hover {
+    /*En passant le curseur dessus les ecrits passent au noir avec un fond blanc accompagné d'une rotation de 5degres */
+    color: black;
+    background: linear-gradient(-45deg, white, #80808029);
+    transform: rotate(5deg);
+    box-shadow: -7px 6px 15px #333;
+}
+.item-navig {
+    flex: 1 1 auto; /*Les onglets peut aggrandir et se retrécir automatiquement par rapport au contenu et à l'espace contenu*/
+    text-align: center;
+}
+
+
+/*partie principal*/
+.conteneur {
+    margin: auto;
+    max-width: 75rem;
+}
+p:hover{
+    /*une bordure droite apparait au niveau du paragraphe lors d'un survol*/
+    border-left: 2px solid gray;
+    padding-left: 10px;
+}
+
+.lien-texte {
+    /*les liens contenu dans la section annecdote sont en gras noir et souligné */
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 1s;
+}
+
+.lien-texte:hover {
+    /*un passage de la souris dessus et le lien sera un blanc avec un fond noir */
+    color: white;
+    background-color: black;
+    text-decoration: underline;
+}
+
+figcaption {
+    /*Du texte en petit caractere */
+    font: small-caption;
+}
+
+figure {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    width: 25%;
+}
+
+figure img {
+    width: 100%
+}
+
+/*pied de page*/
+footer {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    margin-top: 20px;
+}
