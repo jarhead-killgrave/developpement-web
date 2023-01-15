@@ -1,0 +1,54 @@
+/**
+    Style for the event page
+
+    All units are % or em for responsive design.
+ */
+
+.event {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1.25em;
+    border: 0.0625em solid #ccc;
+    border-radius: 5px;
+}
+
+.event img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.event .title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.event .description {
+    margin-bottom: 1em;
+}
+
+.event .date {
+    margin-bottom: 1em;
+}
+
+.event .location {
+    margin-bottom: 1em;
+}
+
+.event .actions {
+    margin-bottom: 1em;
+    border: 0.063em solid #ccc;
+    border-radius: 0.313em;
+    padding: 0.625em;
+    background: #eee;
+}
+
+.event .btn-danger {
+    background: #c00;
+    color: #fff;
+}
+
+.event .btn-danger:hover {
+    background: #f00;
+}

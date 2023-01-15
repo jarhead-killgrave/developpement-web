@@ -1,0 +1,66 @@
+/**
+   Style for the event list page
+
+   All units are % or em for responsive design.
+ */
+
+.event-list {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1.25em;
+  border: 0.0625em solid #ccc;
+  border-radius: 5px;
+}
+
+.event {
+    min-width: fit-content;
+    margin: 1em 0;
+    padding: 1.25em;
+    border: 0.0625em solid #ccc;
+    border-radius: 5px;
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-header h3 {
+    flex: 1;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.event-header img {
+    flex: 0;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border:  0.0625em solid #ccc;
+}
+
+.event-description {
+    margin-bottom: 1em;
+}
+
+/*
+Pagination contains the links to the next and previous pages and the other pages
+*/
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    border: 0.0625em solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+/*Feuille de styledu responsiv*/
+/*Les formes adaptés de mon sites reduisent les styles et simplifient la mise en page notamment au niveau des menus */
+
+/*Ecran moyen*/
+    /*Annulation de la rotation des onglets du menu et transformation du menu-image en diaporama */
+@media only screen and (max-width: 64em) {
+    /*En tête de page*/
+    a.lien-de-navig.active {
+        transform: unset;
+        box-shadow: unset;
+    }
+
+    .lien-de-navig:hover {
+        transform: unset;
+        box-shadow: unset;
+    }
+
+    .banniere-page {
+        display: none;
+    }
+
+    figure {
+        float: unset;
+        width: 50%;
+    }
+
+    figure:nth-of-type(2n+1) {
+        float: unset;
+        width: 50%
+    }
+    
+    /*ma division comportant les liens avec illustration d'image des différentes pages du site apparait en un block d'image qui defilent */
+    #section {
+        width: 510px;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .menu-image {
+        display: table;
+        width: 2040px;
+        animation: slide-image 25s ease 0s infinite alternate;
+    }
+
+    .element {
+        display: table-cell;
+        width: 510px;
+        text-align: center;
+        vertical-align: middle;
+        padding: unset;
+    }
+
+    @keyframes slide-image {
+        from, 25% {margin-left: 0px;}
+        25%, 50% {margin-left: -510px;}
+        50%, 75% {margin-left: -1020px}
+        75%, to {margin-left: -1530px}
+    }
+}
+/*Ecran plus petit*/
+    /*Simplification des styles, disparition du menu-image*/
+@media only screen and (max-width: 48em) {
+
+    .principal {
+        display: block;
+    }
+
+    .sommaire {
+        /*Disparition du sommaire*/
+        display: none
+    }
+    .menu-image{
+        /*Disparition du menu-image*/
+        display: none;
+    }
+
+    .lien-de-navig {
+        background-color: unset;
+        color: black;
+        border-right: 1px solid black;
+        border-top-right-radius: unset;
+        border-top-left-radius: unset;
+        padding: 0;
+        transition: unset;
+    }
+
+    a.lien-de-navig.active {
+        transform: unset;
+        box-shadow: unset;
+        color: white;
+        background:linear-gradient(45deg,gray, white);
+        border: 2px solid gray;
+        border-radius: 4px;
+        margin: 0 2px;
+    }
+}
+
