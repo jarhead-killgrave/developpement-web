@@ -23,3 +23,7 @@ install-dev: ## Install symfony
 	docker compose run --rm --no-deps composer-install composer create-project symfony/skeleton\:${SYMFONY_VERSION} back
 	docker compose stop
 	make start
+
+##@ Tests
+phpstan: ## Run phpstan
+	docker compose exec php ./vendor/bin/phpstan analyse
